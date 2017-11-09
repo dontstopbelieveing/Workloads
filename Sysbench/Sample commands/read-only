@@ -1,0 +1,19 @@
+#readonly
+./sysbench --test=tests/db/oltp.lua \
+--mysql-host=host \
+--mysql-port=3306 \
+--mysql-user=user \
+--mysql-password=password \
+--mysql-db=sbtest \
+--mysql-table-engine=innodb \
+--oltp-test-mode=complex \
+--oltp-read-only=on \
+--oltp-table-size=1000000 \
+--oltp-tables-count=1 \
+--num-threads=1024 \
+--max-requests=0 \
+--oltp-dist-type=uniform \
+--rand-init=on \
+--rand-type=uniform \
+--report-interval=10 \
+--max-time=600 run

@@ -1,8 +1,8 @@
 ./sysbench --test=tests/db/oltp.lua \
 --mysql-host=host \
 --mysql-port=3306 \
---mysql-user=reinvent \
---mysql-password=reinvent \
+--mysql-user=user \
+--mysql-password=password \
 --mysql-db=sbtest \
 --mysql-table-engine=innodb \
 --oltp-test-mode=complex \
